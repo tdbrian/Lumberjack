@@ -1,0 +1,35 @@
+start
+  	= Text+
+
+Text
+  	= word
+  		/ spacedword
+  		/ astrisk
+
+word
+  	= word: [a-z]+ {return word.join("")}
+
+spacedword
+  	= [ \n\r\t]+ secondWord: [a-z]+ {return secondWord.join("");}
+
+astrisk
+	= "*"+ secondWord: [a-z]+ {return "expression" + secondWord.join("");}
+
+------------------------------
+------------------------------
+
+start
+  	= function+
+
+function
+  	= astrisk
+  	/ spacedword
+
+astrisk
+	= "*" string spacedword
+
+string
+	= s: [a-zA-Z]+ {return s.join("");}
+
+spacedword
+  	= [ \n\r\t]
