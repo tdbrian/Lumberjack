@@ -5,7 +5,7 @@ Lumberjack
 
 The new language for the web.
 
-'''
+```as3
 *html5
 
 @import custom ../components/box
@@ -20,4 +20,4 @@ The new language for the web.
 
 	}
 }
-'''
+```
