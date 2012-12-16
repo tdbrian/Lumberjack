@@ -75,27 +75,27 @@ Lumberjack compiler is currently under development with an expected completion o
 
 The opening syntax and required first line of a .lj page should declare html type.
 
-HTML5
+####HTML5
 ```
 *html5
 ```
 
-Transitional
+####Transitional
 ```
 *html
 ```
 
-Strict
+####Strict
 ```
 *strict
 ```
 
-Basic
+####Basic
 ```
 *basic
 ```
 
-Mobile
+####Mobile
 ```
 *mobile
 ```
