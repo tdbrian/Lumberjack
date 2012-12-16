@@ -80,5 +80,22 @@ HTML5
 *html5
 ```
 
+Transitional
+```
+*html
+```
 
+Strict
+```
+*strict
+```
 
+Basic
+```
+*basic
+```
+
+Mobile
+```
+*mobile
+```
