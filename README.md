@@ -66,7 +66,7 @@ Lumberjack compiler, Sawmill, is currently under development with an expected co
 		* "we"
 		* "them"
 	}
-	
+
 }
 
 ```
@@ -185,115 +185,150 @@ For embedding CoffeeScript within object properties, double pound symbols should
 
 Lumberjack objects come from HTML tags, Lumberjack objects, and custom Lumberjack objects called beard objects with the .beard extension. Lumberjack objects are defined by properties which make up content, specific styling properties, layout properties and script events. Object styling and layout properties can be first set from css, scss, or sass stylesheet or embedded styles. Object properties override upper level styles and layouts. Just like html dom and styles, scripts such as JQuery are able to modify standard properties.
 
+Lumberjack objects are identified in the syntax by an asterisk (*) immediately followed by the object type. No spaces are allowed between the asterisk and the object type.
+
+```as3
+*img
+```
+
+Objects can be nested within other objects if the parent object may contain children. Such objects include *div, *box, *hbox, *vbox, etc.. Nexting is defined by including children within brackets '{ }'. Example shown below:
+
+```as3
+*div: {
+	*h1: text = "hello world!"
+}
+```
+The above *div object contains a child *h1 header which functions similar to nesting in HTML5.
+
 ###Lumberjack Objects from HTML Tags
 
--a
--abbr
--address
--area
--article
--aside
--audio
--b
--base
--bdi
--bdo
--blockquote
--body
--br
--button
--canvas
--caption
--cite
--code
--col
--colgroup
--command
--dtalist
--dd
--del
--details
--dfn
--div
--dl
--dt
--em
--embed
--fieldset
--figcaption
--figure
--footer
--form
--h1
--h2
--h3
--h4
--h5
--h6
--head
--header
--hgroup
--hr
--html
--i
--iframe
--img
--input
--ins
--kbd
--keygen
--label
--legend
--li
--link
--map
--mark
--menu
--meta
--meter
--nav
--noscript
--object
--ol
--optgroup
--option
--output
--p
--param
--pre
--progress
--q
--rp
--rt
--s
--samp
--script
--section
--select
--small
--source
--span
--strong
--style
--sub
--summary
--sup
--table
--tbody
--td
--textarea
--tfoot
--th
--thead
--time
--title
--tr
--track
--u
--ul
--var
--video
--wbr
+All modern HTML Tags are supported with common properties taken from HTML5 css and tags.
+
+*a
+*abbr
+*address
+*area
+*article
+*aside
+*audio
+*b
+*base
+*bdi
+*bdo
+*blockquote
+*body
+*br
+*button
+*canvas
+*caption
+*cite
+*code
+*col
+*colgroup
+*command
+*dtalist
+*dd
+*del
+*details
+*dfn
+*div
+*dl
+*dt
+*em
+*embed
+*fieldset
+*figcaption
+*figure
+*footer
+*form
+*h1
+*h2
+*h3
+*h4
+*h5
+*h6
+*head
+*header
+*hgroup
+*hr
+*html
+*i
+*iframe
+*img
+*input
+*ins
+*kbd
+*keygen
+*label
+*legend
+*li
+*link
+*map
+*mark
+*menu
+*meta
+*meter
+*nav
+*noscript
+*object
+*ol
+*optgroup
+*option
+*output
+*p
+*param
+*pre
+*progress
+*q
+*rp
+*rt
+*s
+*samp
+*script
+*section
+*select
+*small
+*source
+*span
+*strong
+*style
+*sub
+*summary
+*sup
+*table
+*tbody
+*td
+*textarea
+*tfoot
+*th
+*thead
+*time
+*title
+*tr
+*track
+*u
+*ul
+*var
+*video
+*wbr
+
+###Bult-In Lumberjack Objects (Beards)
+
+The alpha build of Lumberjack includes several built-in objects (beards) which provide base functionality not automatically provided by defualt HTML5. Below is a list of Lumberjack Objects along with basic definitions. For full .beard object definitions, see the detailed Lumberjack wiki documentation (coming soon).
+
+- *box: 		|	A *box is similar to a div but includes default styling and unique properties for further control
+- *hBox:		|	A *hbox is a horizontal box beard with specific styling to layout children horizontally
+- *vBox:		|	A *vbox is a vertical box beard with specific styling to layout children vertically
+- *beardText:	|	*beardText is a text box beard with specific cross-browser properties for text
+- *beardImg:	|	*beardImg is a *box beard with a default image background
+
+More Lumberjack Beards will become available as the language matures. User custom Beards will be reviewed for compliance to become built-in Lumberjack Beards.
+
+###Custom Lumberjack Objects (Beards)
+
+
+
+
 
 
 
