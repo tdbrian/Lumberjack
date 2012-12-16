@@ -1,21 +1,21 @@
 #Lumberjack
 
-A single new language for generating seperate HTML / CSS / SCSS / SASS / Javascript / Coffeescript files faster and more conveniently. .lj files cross compile from fewer, cleaner, and easier-to-learn lines of Lumberjack code to standard web code. 
+A single new language for generating separate HTML / CSS / SCSS / SASS / Javascript / Coffeescript files faster and more conveniently. .lj files cross compile from fewer, cleaner, and easier-to-learn lines of Lumberjack code to standard web code. Lumberjack includes many types of syntactic syrup to make code development easier including .beard (custom components) and .flapjack (library) files.
 
 ##Why Use Lumberjack?
 
-Do you want to write the same code faster without jumping between multiple files? Lumberjack is very easy to learn and is easier to read and follow than seperate html and css.
+Do you want to write the same code faster without jumping between multiple files? Lumberjack is very easy to learn and is easier to read and follow than separate html and css.
 
 ##Getting Started
 
-Lumberjack compiler is currently under development with an expected completion of January 2013.
+Lumberjack compiler, Sawmill, is currently under development with an expected completion of January 2013.
 
 ##Sample Lumberjack Code
 
 ```as3
 *html5
 
-@import myBoxes ../components/myBoxes
+@flapjack myBoxes ../components/myBoxes
 
 *script source = "test.lj"
 *style source = "styles.css"
@@ -69,33 +69,64 @@ Lumberjack compiler is currently under development with an expected completion o
 
 ```
 
-##Learn the Syntax
+#Learn Lumberjack Syntax
 
-###Opening Syntax
+Lumberjack is largely white space independent except between object properties. The syntax is made up of the following parts:
+
+- Declerations
+- Script Blocks
+- Style Blocks
+- Objects
+	- Properties
+	- Context
+	- Sub Objects
+
+##Syntax Object Rules
+
+Objects are declared by an asterisk (*). Objects can match 1:1 with html tag types, lumberjack objects, or custom .beard objects.
+
+###H1 HTML Header
+```
+*h1
+```
+
+###Lumberjack Horizontal Box
+```
+*hbox
+```
+
+###Custom Beard Object
+```
+*customName-specialBox
+```
+
+##Opening Syntax
 
 The opening syntax and required first line of a .lj page should declare html type.
 
-####HTML5
+###HTML5
 ```
 *html5
 ```
 
-####Transitional
+###Transitional
 ```
 *html
 ```
 
-####Strict
+###Strict
 ```
 *strict
 ```
 
-####Basic
+###Basic
 ```
 *basic
 ```
 
-####Mobile
+###Mobile
 ```
 *mobile
 ```
+
+##Script Syntax
