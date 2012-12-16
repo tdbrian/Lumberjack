@@ -5,20 +5,24 @@
 *script source = "test.lj"
 *style source = "styles.css"
 
-*script:
-{
-	
-}
-
 *script: type = "coffee"
 {
 	testFunction ->
-		num = 3 + 3
 		stringVar = 'hello' + "world"
 		console.log stringVar
+	tester ->
+		console.log "tester ran!"
 }
 
-*vbox: #placeMap .test gap=22 top=15 width=32 text="hello"
+*declaration:
+{
+	testVarA = "test var A"
+}
+
+*vbox: #my-v-box 
+	.test-style 
+	gap=22 
+	top=15 width=32
 {
 	*p: 
 		text = "hello"
@@ -30,24 +34,20 @@
 		text = "hello world"
 
 	*box: 	
-		click = test(a)
+		click = tester
 		#limited
 		.help .we .are
 
-	*label: text = "hello"
+	*label: text = #testVarA#
 
 	*image:
-		source = "we.jpg" 
+		source = "testImage.jpg" 
 		height = 234
 		width = 88
-		{
-			*h1: text = "me" width = 22 height = 32
-			*custom-help: 
-		}
 }
 
-*list: type = "ordered" height = "100%" click = testFunction()
+*list: height = "100%" click = testFunction
 {	
-	*li: text = "we"
-	*li: text = "them"
+	* "we"
+	* "them"
 }
