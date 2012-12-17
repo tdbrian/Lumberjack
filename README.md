@@ -1,10 +1,10 @@
 #Lumberjack
 
-A single new language for generating separate HTML / CSS / SCSS / SASS / Javascript / Coffeescript files faster and more conveniently. .lj files cross compile from fewer, cleaner, and easier-to-learn lines of Lumberjack code to standard web code. Lumberjack includes many types of syntactic syrup to make code development easier including .beard (custom components) and .flapjack (library) files.
+A single new client web markup language for generating separate HTML / CSS / SCSS / SASS / Javascript / Coffeescript files faster and more conveniently. .lj files cross compile from fewer, cleaner, and easier-to-learn lines of Lumberjack code to standard web code. Lumberjack includes many types of syntactic syrup to make code development easier including .beard (custom components) and .flapjack (library) files.
 
-##Why Use Lumberjack?
+##Why Use Lumberjack and How is it Different Than HTML, CSS and Javascript or HAML, SASS and Coffeescript?
 
-Do you want to write the same code faster without jumping between multiple files? Lumberjack is very easy to learn and is easier to read and follow than separate html, style, and script files.
+1. Lumberjack is all about writing less 
 
 ##Getting Started
 
@@ -13,14 +13,15 @@ Lumberjack compiler, Sawmill, is currently under development with an expected co
 ##Sample Lumberjack Code
 
 ```as3
-*html5 {
+*html5 
+{
 
 	@beards myBoxes ../components/myBoxes
 
 	*script source = "test.lj"
 	*style source = "styles.css"
 
-	*script: type = "coffee"
+	*script: type = "coffee" 
 	{
 		testFunction ->
 			stringVar = 'hello' + "world"
@@ -141,12 +142,14 @@ Below is an example of embedding javascript:
 ```as3
 *script:
 {
-	function testFunction {
+	function testFunction 
+	{
 		var stringVar = 'hello' + "world";
 		console.log (stringVar);
 	}
 
-	function tester {
+	function tester 
+	{
 		console.log ("tester ran!");
 	}
 }
@@ -194,7 +197,8 @@ Lumberjack beards are identified in the syntax by an asterisk (*) immediately fo
 Beards can be nested within other beards if the parent object may contain children. Such beards include *div, *box, *hbox, *vbox, etc.. Nexting is defined by including children within brackets '{ }'. Example shown below:
 
 ```as3
-*div: {
+*div: 
+{
 	*h1: text = "hello world!"
 }
 ```
@@ -332,13 +336,16 @@ Below is a .beard example with implementation.
 
 .beard File (../myBeards/beardTextBlock.beard):
 ```as3
-*script {
-	function tester() {
+*script 
+{
+	function tester() 
+	{
 		console.log("clicked inside beard box");
 	}
 }
 
-*declaration: {
+*declaration: 
+{
 	textA
 	textB
 }
@@ -348,15 +355,17 @@ Below is a .beard example with implementation.
 	click = tester
 	padding-left = 10
 	padding-top = 10
-	.style-1 .style-2 {
-	*beardText: text = #textA# shadow = shadow(12) top = 12 left = 15
-	*beardText: text = #textB# shadow = shadow(12) top = 24 left = 15
-}
+	.style-1 .style-2 
+	{
+		*beardText: text = #textA# shadow = shadow(12) top = 12 left = 15
+		*beardText: text = #textB# shadow = shadow(12) top = 24 left = 15
+	}
 ```
 
 Beard Implementation:
 ```as3
-*html5 {
+*html5 
+{
 
 	@beards myBeards ../myBeards
 
@@ -364,7 +373,7 @@ Beard Implementation:
 }
 ```
 
-##Lumberjack Flapjack (Libraries)
+##Lumberjack Flapjacks (Libraries)
 
 Lumberjack uses Flapjack .flapjack files to allow users to create custom Beard libraries for use within Lumberjack files. A Flapjack file is basically many custom Lumberjack Beard items (components) all with the same theme or set of functionality which can be group together and associated wiht a Lumberjack file. 
 
@@ -372,11 +381,13 @@ One example use of a Flapjack .flapjack file is to create a custom library of fo
 
 Flapjack Implementation:
 ```as3
-*html5 {
+*html5 
+{
 
 	@flapjack myFlapjack ../myFlapjack
 
-	*form {
+	*form 
+	{
 		*input:	label = "First Name"
 		*input:	label = "Last Name"
 		*input: type = "button" label = "Submit"
