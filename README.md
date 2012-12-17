@@ -105,6 +105,10 @@ Lumberjack is largely white space independent except between object properties. 
 
 The opening syntax and required first line of a .lj file must declare a html type.
 
+```as3
+*html5
+```
+
 - HTML5: *html5
 - Transitional: *html
 - Strict: *strict
