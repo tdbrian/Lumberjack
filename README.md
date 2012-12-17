@@ -15,7 +15,7 @@ Lumberjack compiler, Sawmill, is currently under development with an expected co
 ```as3
 *html5 {
 
-	@import myBoxes ../components/myBoxes
+	@beards myBoxes ../components/myBoxes
 
 	*script source = "test.lj"
 	*style source = "styles.css"
@@ -71,11 +71,11 @@ Lumberjack compiler, Sawmill, is currently under development with an expected co
 
 ```
 
-#Learn Lumberjack Syntax
+#Lumberjack Syntax
 
 Lumberjack is largely white space independent except between object properties. The syntax is made up of the following parts:
 
-- Declerations
+- Declarations
 - Script Blocks
 - Style Blocks
 - Objects
@@ -181,17 +181,17 @@ For embedding CoffeeScript within object properties, double pound symbols should
 *label: text = ##stringVar##
 ```
 
-##Lumberjack Objects 
+##Lumberjack Beards (Objects)
 
-Lumberjack objects come from HTML tags, Lumberjack objects, and custom Lumberjack objects called beard objects with the .beard extension. Lumberjack objects are defined by properties which make up content, specific styling properties, layout properties and script events. Object styling and layout properties can be first set from css, scss, or sass stylesheet or embedded styles. Object properties override upper level styles and layouts. Just like html dom and styles, scripts such as JQuery are able to modify standard properties.
+Lumberjack objects come from HTML tags, Lumberjack objects, and custom Lumberjack objects called beard objects with the .beard extension. Lumberjack beards are defined by properties which make up content, specific styling properties, layout properties and script events. Object styling and layout properties can be first set from css, scss, or sass stylesheet or embedded styles. Object properties override upper level styles and layouts. Just like html dom and styles, scripts such as JQuery are able to modify standard properties.
 
-Lumberjack objects are identified in the syntax by an asterisk (*) immediately followed by the object type. No spaces are allowed between the asterisk and the object type.
+Lumberjack beards are identified in the syntax by an asterisk (*) immediately followed by the object type. No spaces are allowed between the asterisk and the object type.
 
 ```as3
 *img
 ```
 
-Objects can be nested within other objects if the parent object may contain children. Such objects include *div, *box, *hbox, *vbox, etc.. Nexting is defined by including children within brackets '{ }'. Example shown below:
+Beards can be nested within other beards if the parent object may contain children. Such beards include *div, *box, *hbox, *vbox, etc.. Nexting is defined by including children within brackets '{ }'. Example shown below:
 
 ```as3
 *div: {
@@ -200,9 +200,9 @@ Objects can be nested within other objects if the parent object may contain chil
 ```
 The above *div object contains a child *h1 header which functions similar to nesting in HTML5.
 
-###Lumberjack Objects from HTML Tags
+###Lumberjack Beards from HTML Tags
 
-All modern HTML Tags are supported with common properties taken from HTML5 css and tags.
+All modern HTML Tags are supported with common properties taken from HTML5 css and tags. Many Beards taken from HTML5 styles and tags include 
 
 *a
 *abbr
@@ -314,7 +314,7 @@ All modern HTML Tags are supported with common properties taken from HTML5 css a
 
 ###Bult-In Lumberjack Objects (Beards)
 
-The alpha build of Lumberjack includes several built-in objects (beards) which provide base functionality not automatically provided by defualt HTML5. Below is a list of Lumberjack Objects along with basic definitions. For full .beard object definitions, see the detailed Lumberjack wiki documentation (coming soon).
+The alpha build of Lumberjack includes several built-in objects (beards) which provide base functionality not provided by defualt HTML5. Below is a list of Lumberjack Objects along with basic definitions. For full .beard object definitions, see the detailed Lumberjack wiki documentation (coming soon).
 
 - *box: 		|	A *box is similar to a div but includes default styling and unique properties for further control
 - *hBox:		|	A *hbox is a horizontal box beard with specific styling to layout children horizontally
@@ -326,11 +326,65 @@ More Lumberjack Beards will become available as the language matures. User custo
 
 ###Custom Lumberjack Objects (Beards)
 
+Custom Lumberjack Beards are extremely useful because one written, they can be injected into Lumberjack files. Lumberjack Beard files (.beard) have the same syntax as Lumberjack files (.lj) except they do not have a document type (html5, xhtml). .beard files should contain the content, children Beards, styling, and layout of the custom Beard. Beards can be used for many differnt types of custom components - from forms to groups to calendar components, etc....
 
+Below is a .beard example with implementation.
 
+.beard File (../myBeards/beardTextBlock.beard):
+```as3
+*script {
+	function tester() {
+		console.log("clicked inside beard box");
+	}
+}
 
+*declaration: {
+	textA
+	textB
+}
 
+*box: 	
+	#limited
+	click = tester
+	padding-left = 10
+	padding-top = 10
+	.style-1 .style-2 {
+	*beardText: text = #textA# shadow = shadow(12) top = 12 left = 15
+	*beardText: text = #textB# shadow = shadow(12) top = 24 left = 15
+}
+```
 
+Beard Implementation:
+```as3
+*html5 {
+
+	@beards myBeards ../myBeards
+
+	*myBeards-beardTextBlock: textA = "hello!" textB = "world!"
+}
+```
+
+##Lumberjack Flapjack (Libraries)
+
+Lumberjack uses Flapjack .flapjack files to allow users to create custom Beard libraries for use within Lumberjack files. A Flapjack file is basically many custom Lumberjack Beard items (components) all with the same theme or set of functionality which can be group together and associated wiht a Lumberjack file. 
+
+One example use of a Flapjack .flapjack file is to create a custom library of form objects or Beards which can then be easily tied to be default of a Lumberjack file. This is especially useful for packaging together what would usually require seperate css, js, and html files or to some extent would not be possible with standard html5.
+
+Flapjack Implementation:
+```as3
+*html5 {
+
+	@flapjack myFlapjack ../myFlapjack
+
+	*form {
+		*input:	label = "First Name"
+		*input:	label = "Last Name"
+		*input: type = "button" label = "Submit"
+	}
+}
+```
+
+The above implementation will trade out any *form beard with the corresponding *form beard in the 'myFlapjack' Flapjack. Not only will this Beard contain styling, but it will also include content layout and content. This is especially usefull for creating a layout, style and content just one time- keeping your code DRY.
 
 
 
