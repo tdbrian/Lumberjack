@@ -93,9 +93,10 @@ LJ does many things HTML, CSS, and JS can't do alone or by default. Read on to l
 
 Lumberjack is largely white space independent except between object properties. The syntax is made up of the following parts:
 
-- Declarations
+- Document Type
 - Script Blocks
 - Style Blocks
+- Declarations
 - Objects
 	- Properties
 	- Context
@@ -165,6 +166,47 @@ CoffeeScript can be used in Lumberjack just like js. Type referencing is require
 For embedding CoffeeScript within object properties, double pound symbols should be used instead of one for js.
 ```
 *label: text = ##stringVar##
+```
+
+##Style Syntax
+
+Any imported or embedded CSS styles will be used unless a Beard (object) specifies other properties.
+
+###CSS
+
+CSS can be used directly in Lumberjack for styling. CSS is the defult styling syntax, so the type property does not need to be set.
+
+```as3
+*style:
+{
+	.testStyle 
+	{
+		color: #ffffff;
+	}
+}
+```
+
+###SASS or SCSS
+
+Either SASS or SCSS can be used instead of CSS by simply adding the type property to *style and declaring either SASS or SCSS.
+
+```as3
+*style: type = "SASS"
+{
+	.testStyle 
+		color: #ffffff
+}
+```
+
+##Declaration Syntax
+
+Declarations are used to include non-graphic Beards into the current Lumberjack file. An examples of a declaration Beard is a Beard formattter.
+
+```as3
+*declaration: 
+{
+	*zipFormatter: #myZipFormatter country = "USA"
+}
 ```
 
 ##Lumberjack Beards (Objects)
