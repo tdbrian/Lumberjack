@@ -2,13 +2,30 @@
 
 A single new client web markup language for generating separate HTML / CSS / SCSS / SASS / Javascript / Coffeescript files faster and more conveniently. .lj files cross compile from fewer, cleaner, and easier-to-learn lines of Lumberjack code to standard web code. Lumberjack includes many types of syntactic syrup to make code development easier including .beard (custom components) and .flapjack (library) files.
 
-##Why Use Lumberjack and How is it Different Than HTML, CSS and Javascript or HAML, SASS and Coffeescript?
-
-1. Lumberjack is all about writing less 
-
 ##Getting Started
 
 Lumberjack compiler, Sawmill, is currently under development with an expected completion of January 2013.
+
+##Common Questions
+
+###Why Use Lumberjack
+
+Lumberjack (LJ) is all about keeping your web code dry and easy to follow. Although Lumberjack is compatible with server side languages such as PHP or Ruby, Lumberjack is especially useful for websites not powered by templating engines and/or serverside template code. Lumberjack can best be compared to what a compilation of HAML, Handlebars, SASS and Compass can do... but it also does more than that and does not require a serverside language like PHP or Ruby!
+
+1. LJ is like HAML in that it makes code easier to read and cuts down on syntax... except LJ is not indentation dependent.
+2. LJ is like Handelbars in that it allows for easy page templating.
+3. LJ is like SASS in that it makes many CSS drier, easier to wite, and allows variables.
+4. LJ is like Compass in that it includes many syntactic syrup features such as browser-independent styling. 
+
+###How is Lumberjack Different Than HTML, CSS and Javascript?
+
+LJ does many things HTML, CSS, and JS can't do alone or by default. Read on to learn more.
+
+###Is Lumberjack the same as HAML, SASS and Coffeescript?
+
+1. LJ is like HAML in many ways but LJ does far more. We love HAML! HAML set a new precedent in cutting down on verbose HTML.
+2. LJ does many of the things SASS is capable of- just differently - and we believe better.
+3. LJ does not attempt to replace Coffeescript as LJ is not a scripting language. LJ embraces Coffeescript and allows it to be used instead of standard javascript.
 
 ##Sample Lumberjack Code
 
