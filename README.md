@@ -101,53 +101,15 @@ Lumberjack is largely white space independent except between object properties. 
 	- Context
 	- Sub Objects
 
-##Syntax Object Rules
-
-Objects are declared by an asterisk (*) and followed by a colon (:). Objects can match 1:1 with html tag types, lumberjack objects, or custom .beard objects.
-
-###H1 HTML Header
-```
-*h1
-```
-
-###Lumberjack Horizontal Box
-```
-*hbox
-```
-
-###Custom Beard Object
-```
-*customName-specialBox
-```
-
 ##Document Syntax
 
-The opening syntax and required first line of a .lj page should declare html type.
+The opening syntax and required first line of a .lj file must declare a html type.
 
-###HTML5
-```
-*html5
-```
-
-###Transitional
-```
-*html
-```
-
-###Strict
-```
-*strict
-```
-
-###Basic
-```
-*basic
-```
-
-###Mobile
-```
-*mobile
-```
+- HTML5: *html5
+- Transitional: *html
+- Strict: *strict
+- Basic: *basic
+- Mobile: *mobile
 
 ##Script Syntax
 
