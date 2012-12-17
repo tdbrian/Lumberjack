@@ -414,6 +414,9 @@ Flapjack Implementation:
 
 The above implementation will trade out any *form beard with the corresponding *form beard in the 'myFlapjack' Flapjack. Not only will this Beard contain styling, but it will also include content layout and content. This is especially usefull for creating a layout, style and content just one time- keeping your code DRY.
 
+#License
+
+See ```LICENSE.txt```.
 
 
 
