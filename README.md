@@ -41,7 +41,7 @@ LJ does many things HTML, CSS, and JS can't do alone or by default. Read on to l
 	*script: type = "coffee" 
 	{
 		testFunction ->
-			stringVar = 'hello' + "world"
+			stringVar = "hello" + "world"
 			console.log stringVar
 		tester ->
 			console.log "tester ran!"
@@ -54,20 +54,20 @@ LJ does many things HTML, CSS, and JS can't do alone or by default. Read on to l
 
 	*vbox: #my-v-box 
 		.test-style 
-		gap=22 
-		top = 15 width = 32
+		gap = "22" 
+		top = "15" width = "32"
 	{
 		*p: 
 			text = "hello"
-			width = 25
-			height = 22 
-			font-size = 23em
+			width = "25"
+			height = "22" 
+			font-size = "23em"
 		
 		*h1: 
 			text = "hello world"
 
 		*box: 	
-			click = tester
+			click = #tester#
 			#limited
 			.help .we .are
 
@@ -75,11 +75,11 @@ LJ does many things HTML, CSS, and JS can't do alone or by default. Read on to l
 
 		*image:
 			source = "testImage.jpg" 
-			height = 234
-			width = 88
+			height = "234"
+			width = "88"
 	}
 
-	*list: height = "100%" click = testFunction
+	*list: height = "100%" click = #testFunction#
 	{	
 		* "we"
 		* "them"
@@ -103,7 +103,7 @@ Lumberjack is largely white space independent except between object properties. 
 
 ##Syntax Object Rules
 
-Objects are declared by an asterisk (*). Objects can match 1:1 with html tag types, lumberjack objects, or custom .beard objects.
+Objects are declared by an asterisk (*) and followed by a colon (:). Objects can match 1:1 with html tag types, lumberjack objects, or custom .beard objects.
 
 ###H1 HTML Header
 ```
@@ -161,7 +161,7 @@ Below is an example of embedding javascript:
 {
 	function testFunction 
 	{
-		var stringVar = 'hello' + "world";
+		var stringVar = "hello" + "world";
 		console.log (stringVar);
 	}
 
@@ -189,7 +189,7 @@ CoffeeScript can be used in Lumberjack just like js. Type referencing is require
 *script: type = "coffee"
 {
 	testFunction ->
-		stringVar = 'hello' + "world"
+		stringVar = "hello" + "world"
 		console.log stringVar
 	tester ->
 		console.log "tester ran!"
@@ -205,10 +205,10 @@ For embedding CoffeeScript within object properties, double pound symbols should
 
 Lumberjack objects come from HTML tags, Lumberjack objects, and custom Lumberjack objects called beard objects with the .beard extension. Lumberjack beards are defined by properties which make up content, specific styling properties, layout properties and script events. Object styling and layout properties can be first set from css, scss, or sass stylesheet or embedded styles. Object properties override upper level styles and layouts. Just like html dom and styles, scripts such as JQuery are able to modify standard properties.
 
-Lumberjack beards are identified in the syntax by an asterisk (*) immediately followed by the object type. No spaces are allowed between the asterisk and the object type.
+Lumberjack beards are identified in the syntax by an asterisk (*) immediately followed by the object type and a colon (:). No spaces are allowed between the asterisk, object type and colon. Properties follow the colon and require at least one space between properties. Property strings require and opening and closing double quotes " " as shown in the example below. 
 
 ```as3
-*img
+*img: source = "../logo.png"
 ```
 
 Beards can be nested within other beards if the parent object may contain children. Such beards include *div, *box, *hbox, *vbox, etc.. Nexting is defined by including children within brackets '{ }'. Example shown below:
@@ -369,13 +369,13 @@ Below is a .beard example with implementation.
 
 *box: 	
 	#limited
-	click = tester
-	padding-left = 10
-	padding-top = 10
+	click = "tester"
+	padding-left = "10"
+	padding-top = "10"
 	.style-1 .style-2 
 	{
-		*beardText: text = #textA# shadow = shadow(12) top = 12 left = 15
-		*beardText: text = #textB# shadow = shadow(12) top = 24 left = 15
+		*beardText: text = #textA# shadow = "shadow(12)" top = "12" left = "15"
+		*beardText: text = #textB# shadow = "shadow(12)" top = "24" left = "15"
 	}
 ```
 
