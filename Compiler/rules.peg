@@ -1,0 +1,45 @@
+start
+  	= function+
+
+function
+  	= object
+  	/ comment
+
+object
+	= objectDeclaration property* children*
+
+objectDeclaration
+	= sep* "*" objectName:stringNum sep* ":" sep* {return objectName}
+
+property
+	= propertyName propertyValue
+
+propertyName
+	= sep* propName:string sep* "=" sep* "\"" {return propName}
+
+propertyValue
+	= value:stringNum "\"" sep* {return value}
+
+children
+	= "{" object* sep* "}"
+
+string
+	= s: [a-zA-Z]+ {return s.join("");}
+
+number
+	= n: [0-9]+ {return n+n}
+
+stringNum
+        = sn: [0-9a-zA-Z-#]+ {return sn.join("");}
+
+comment
+        = "/" commentString* {return "#comment"}
+
+sep
+  	= [ \n\r\t] {return ""}
+
+newLine
+	= [\n\r]
+
+commentString
+	= [ \t0-9a-zA-Z-!@#$%^&(){}:;?.,]
