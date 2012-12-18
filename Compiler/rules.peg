@@ -4,24 +4,51 @@ start
 function
   	= object
   	/ comment
+  	/ beard
 
 object
-	= objectDeclaration property* children*
+	= comment* objectDeclaration property* children*
 
 objectDeclaration
 	= sep* "*" objectName:stringNum sep* ":" sep* {return objectName}
 
 property
 	= propertyName propertyValue
+	/ objId
+	/ objClass
 
 propertyName
-	= sep* propName:string sep* "=" sep* "\"" {return propName}
+	= sep* propName:stringNum sep* "=" sep* "\"" {return propName}
 
 propertyValue
-	= value:stringNum "\"" sep* {return value}
+	= value:stringSpaceNum "\"" sep* {return value}
 
 children
 	= "{" object* sep* "}"
+
+beard
+	= "@beard" sep* stringNum sep* filePath sep* newLine*
+
+objId
+	= sep* "#" objId:stringNum sep* {return "id: " + objId}
+
+objClass
+	= sep* "." objClass:stringNum sep* {return "class: " + objClass}
+
+comment
+        = "/" commentString* {return "#comment"}
+
+newLine
+	= [\n\r]
+
+filePath
+	= fp: [/.a-zA-Z0-9]* {return fp.join("");}
+
+commentString
+	= [ \t0-9a-zA-Z-!@#$%^&(){}:;?.,]
+
+sep
+  	= [ \n\r\t] {return ""}
 
 string
 	= s: [a-zA-Z]+ {return s.join("");}
@@ -30,16 +57,7 @@ number
 	= n: [0-9]+ {return n+n}
 
 stringNum
-        = sn: [0-9a-zA-Z-#]+ {return sn.join("");}
+        = sn: [0-9a-zA-Z-#.]+ {return sn.join("");}
 
-comment
-        = "/" commentString* {return "#comment"}
-
-sep
-  	= [ \n\r\t] {return ""}
-
-newLine
-	= [\n\r]
-
-commentString
-	= [ \t0-9a-zA-Z-!@#$%^&(){}:;?.,]
+stringSpaceNum
+        = sn: [ 0-9a-zA-Z-#.%]+ {return sn.join("");}
