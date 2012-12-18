@@ -7,7 +7,7 @@ function
   	/ beard
 
 object
-	= comment* objectDeclaration property* children*
+	= objectDeclaration property* children*
 
 objectDeclaration
 	= sep* "*" objectName:stringNum sep* ":" sep* {return objectName}
@@ -27,7 +27,7 @@ children
 	= "{" object* sep* "}"
 
 beard
-	= "@beard" sep* stringNum sep* filePath sep* newLine*
+	= "@beard" sep* name: stringNum sep* path: filePath sep* newLine* {return "beard, " + name + ", " + path}
 
 objId
 	= sep* "#" objId:stringNum sep* {return "id: " + objId}
@@ -60,4 +60,4 @@ stringNum
         = sn: [0-9a-zA-Z-#.]+ {return sn.join("");}
 
 stringSpaceNum
-        = sn: [ 0-9a-zA-Z-#.%]+ {return sn.join("");}
+        = sn: [ \n\t0-9a-zA-Z-#.%=:;]+ {return sn.join("");}
