@@ -1,0 +1,719 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"lumb",
+				"lumberjackArray"
+			],
+			[
+				"inpu",
+				"inputString"
+			],
+			[
+				"el",
+				"else"
+			],
+			[
+				"node",
+				"module._nodeModulePaths(from);"
+			],
+			[
+				"rea",
+				"relative"
+			],
+			[
+				"padding",
+				"padding-bottom"
+			],
+			[
+				"padd",
+				"padding-left"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"min-",
+				"min-width"
+			],
+			[
+				"background",
+				"background-repeat"
+			],
+			[
+				"repa",
+				"repeat-y"
+			],
+			[
+				"rep",
+				"repeat-y"
+			],
+			[
+				"backgrou",
+				"background-repeat"
+			],
+			[
+				"back",
+				"background-image"
+			],
+			[
+				"proje",
+				"projectSearch"
+			],
+			[
+				"path",
+				"pathToFolder"
+			],
+			[
+				"templa",
+				"templateURL"
+			],
+			[
+				"closeequip",
+				"closeDeleteEquipmentWindow"
+			],
+			[
+				"delete",
+				"deleteEquipment"
+			],
+			[
+				"equipment",
+				"equipmentName"
+			],
+			[
+				"select",
+				"selectedEquipmentID"
+			],
+			[
+				"selecte",
+				"selectedEquipmentName"
+			],
+			[
+				"full",
+				"fullTag"
+			],
+			[
+				"resetnew",
+				"resetNewEquipmentWindow"
+			],
+			[
+				"if",
+				"ife	if … else"
+			],
+			[
+				"speci",
+				"resetSpecificEquipmentTypeDropdown"
+			],
+			[
+				"specific",
+				"SpecificEquipmentTypes"
+			],
+			[
+				"general",
+				"GeneralEquipmentTypes"
+			],
+			[
+				"templ",
+				"templateURL"
+			],
+			[
+				"generate",
+				"generateEquipmentList"
+			],
+			[
+				"addnew",
+				"addNewMultipleEquipment"
+			],
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"d",
+				"text-decoration"
+			],
+			[
+				"Proj",
+				"Projects"
+			],
+			[
+				"goto",
+				"goToCurrentProject"
+			],
+			[
+				"currproj",
+				"currProjectName"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"compan",
+				"companySettingsWindow"
+			],
+			[
+				"reset",
+				"resetEditProjecsUsersWindow"
+			],
+			[
+				"logged",
+				"loggedInUser"
+			],
+			[
+				"is",
+				"isClient"
+			],
+			[
+				"point",
+				"pointWB"
+			],
+			[
+				"hum",
+				"humidityRatioBa"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Compiler/sawmill.coffee",
+			"settings":
+			{
+				"buffer_size": 808,
+				"line_ending": "Unix",
+				"name": "sawmill.coffee"
+			}
+		},
+		{
+			"file": "Compiler/Sample Compilers/pizza.js",
+			"settings":
+			{
+				"buffer_size": 665,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "[\n   \"beard, myBoxes, ../components/myBoxes\",\n   [\n      [],\n      [\n         \"#comment\"\n      ],\n      \"html5\",\n      [],\n      [\n         [\n            \"{\",\n            [\n               \"\",\n               \"\",\n               \"\"\n            ],\n            [\n               [\n                  [],\n                  [],\n                  \"script\",\n                  [\n                     [\n                        \"source\",\n                        \"test.lj\"\n                     ]\n                  ],\n                  []\n               ],\n               [\n                  [],\n                  [],\n                  \"style\",\n                  [\n                     [\n                        \"source\",\n                        \"styles.css\"\n                     ]\n                  ],\n                  []\n               ],\n               [\n                  [],\n                  [],\n                  \"script\",\n                  [\n                     [\n                        \"coffee\",\n                        \"test = 12\"\n                     ]\n                  ],\n                  []\n               ],\n               [\n                  [],\n                  [],\n                  \"*sc\",\n                  [],\n                  \"\nasdfasdf\n\"\n               ],\n               [\n                  [],\n                  [],\n                  \"vbox\",\n                  [\n                     \"id: my-v-box\",\n                     \"class: test-style\",\n                     [\n                        \"gap\",\n                        \"22\"\n                     ],\n                     [\n                        \"top\",\n                        \"15\"\n                     ],\n                     [\n                        \"width\",\n                        \"32\"\n                     ]\n                  ],\n                  [\n                     [\n                        \"{\",\n                        [\n                           \"\",\n                           \"\",\n                           \"\",\n                           \"\"\n                        ],\n                        [\n                           [\n                              [],\n                              [\n                                 \"#comment\"\n                              ],\n                              \"p\",\n                              [\n                                 [\n                                    \"text\",\n                                    \"hello\"\n                                 ],\n                                 [\n                                    \"width\",\n                                    \"25\"\n                                 ],\n                                 [\n                                    \"height\",\n                                    \"22\"\n                                 ],\n                                 [\n                                    \"font-size\",\n                                    \"1.2em\"\n                                 ]\n                              ],\n                              []\n                           ],\n                           [\n                              [],\n                              [],\n                              \"h1\",\n                              [\n                                 [\n                                    \"text\",\n                                    \"hello world\"\n                                 ]\n                              ],\n                              []\n                           ],\n                           [\n                              [],\n                              [],\n                              \"box\",\n                              [\n                                 [\n                                    \"click\",\n                                    \"tester\"\n                                 ],\n                                 \"class: help\",\n                                 \"class: we\",\n                                 \"class: are\"\n                              ],\n                              [\n                                 [\n                                    \"{\",\n                                    [\n                                       \"\",\n                                       \"\",\n                                       \"\",\n                                       \"\"\n                                    ],\n                                    [\n                                       [\n                                          [],\n                                          [],\n                                          \"label\",\n                                          [\n                                             [\n                                                \"text\",\n                                                \"test labels\"\n                                             ]\n                                          ],\n                                          []\n                                       ]\n                                    ],\n                                    [],\n                                    [],\n                                    [],\n                                    [],\n                                    \"}\"\n                                 ]\n                              ]\n                           ]\n                        ],\n                        [\n                           \"\",\n                           \"\",\n                           \"\",\n                           \"\"\n                        ],\n                        [\n                           \"#commentBlock\"\n                        ],\n                        [],\n                        [\n                           \"\",\n                           \"\"\n                        ],\n                        \"}\"\n                     ]\n                  ]\n               ],\n               [\n                  [],\n                  [],\n                  \"myBoxes-myBoxes\",\n                  [\n                     [\n                        \"title\",\n                        \"test box\"\n                     ]\n                  ],\n                  [\n                     [\n                        \"{\",\n                        [\n                           \"\",\n                           \"\",\n                           \"\"\n                        ],\n                        [],\n                        [],\n                        [],\n                        [],\n                        [],\n                        \"}\"\n                     ]\n                  ]\n               ],\n               [\n                  [],\n                  [],\n                  \"list\",\n                  [\n                     [\n                        \"height\",\n                        \"100%\"\n                     ],\n                     [\n                        \"click\",\n                        \"testFunction\"\n                     ]\n                  ],\n                  [\n                     [\n                        \"{\",\n                        [\n                           \"\",\n                           \"\",\n                           \"\",\n                           \"\"\n                        ],\n                        [\n                           [\n                              [],\n                              [],\n                              \"li\",\n                              [],\n                              []\n                           ],\n                           [\n                              [],\n                              [],\n                              \"li\",\n                              [],\n                              []\n                           ]\n                        ],\n                        [],\n                        [],\n                        [],\n                        [],\n                        \"}\"\n                     ]\n                  ]\n               ]\n            ],\n            [\n               \"\",\n               \"\"\n            ],\n            [],\n            [],\n            [],\n            \"}\"\n         ]\n      ]\n   ]\n]",
+			"settings":
+			{
+				"buffer_size": 7985,
+				"line_ending": "Unix",
+				"name": "["
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 367.0,
+		"selected_items":
+		[
+			[
+				"xml",
+				"Set Syntax: XML"
+			],
+			[
+				"node",
+				"Nodejs::Run::Current File"
+			],
+			[
+				"nodela",
+				"Nodejs::Run::Current File + Arguments"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"actions",
+				"Set Syntax: ActionScript"
+			],
+			[
+				"syntax",
+				"Set Syntax: HTML (Tcl)"
+			],
+			[
+				"syntax: as",
+				"Set Syntax: ActionScript"
+			],
+			[
+				"synta",
+				"Set Syntax: SQL"
+			],
+			[
+				"syn",
+				"Set Syntax: Groovy"
+			],
+			[
+				"as",
+				"Set Syntax: AppleScript"
+			],
+			[
+				"act",
+				"Set Syntax: ActionScript"
+			],
+			[
+				"sass",
+				"Set Syntax: Sass"
+			],
+			[
+				"json",
+				"Pretty JSON: Reformat (Pretty Print) JSON"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"obje",
+				"Set Syntax: Objective-C"
+			],
+			[
+				"objec",
+				"Set Syntax: Objective-C++"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/thomasbrian/git-repositories/Lumberjack/Compiler/sawmill.js",
+		"/Users/thomasbrian/git-repositories/Lumberjack/Compiler/lumberjack.pegjs",
+		"/Users/thomasbrian/git-repositories/Lumberjack/lumberjack Testing/lumberjack.as",
+		"/Users/thomasbrian/git-repositories/Lumberjack/Testing/sampleLumberjack.lj",
+		"/Users/thomasbrian/git-repositories/Lumberjack/Compiler/rules.peg",
+		"/Users/thomasbrian/git-repositories/Lumberjack/Compiler/sampleRules.peg",
+		"/Users/thomasbrian/git-repositories/Lumberjack/Compiler/rules.txt",
+		"/Users/thomasbrian/git-repositories/Lumberjack/LICENSE.txt",
+		"/Users/thomasbrian/git-repositories/Lumberjack/README.md",
+		"/Users/thomasbrian/Desktop/lumberjack.as",
+		"/Users/thomasbrian/Google Drive/Thomas/MyWebsites/Cock of the Walk Enterprise/directions.haml",
+		"/Users/thomasbrian/Google Drive/Thomas/MyWebsites/Cock of the Walk Enterprise/aboutUs.html",
+		"/Users/thomasbrian/Google Drive/Thomas/MyWebsites/Cock of the Walk Enterprise/index.haml",
+		"/Users/thomasbrian/Google Drive/Thomas/MyWebsites/Cock of the Walk Enterprise/aboutUs.haml",
+		"/Users/thomasbrian/Google Drive/Thomas/MyWebsites/Cock of the Walk Enterprise/stylesheets/styles.css",
+		"/Users/thomasbrian/Google Drive/Thomas/MyWebsites/Cock of the Walk Enterprise/index.html",
+		"/Users/thomasbrian/Google Drive/Thomas/MyWebsites/BES-Cx-Plus/Meteor/bescxplus/text/museosans-webfont.svg",
+		"/Users/thomasbrian/Google Drive/Thomas/MyWebsites/BES-Cx-Plus/Meteor/bescxplus/.meteor/local/build/server/node_modules/stylus/lib/nodes/fontface.js",
+		"/Users/thomasbrian/Google Drive/Thomas/MyWebsites/BES-Cx-Plus/Meteor/bescxplus/css/tabs-toggle.css",
+		"/Users/thomasbrian/Desktop/equipmentObject.json",
+		"/Users/thomasbrian/Google Drive/Thomas/MyWebsites/BES-Cx-Plus/Meteor/bescxplus/bescxplus.css",
+		"/Users/thomasbrian/Google Drive/Thomas/MyWebsites/BES-Cx-Plus/Meteor/bescxplus/bescxplus.js",
+		"/Users/thomasbrian/Google Drive/Thomas/MyWebsites/BES-Cx-Plus/Meteor/bescxplus/bescxplus.html",
+		"/Users/thomasbrian/Google Drive/Thomas/MyWebsites/BES-Cx-Plus/Meteor/bescxplus/css/style.css",
+		"/Users/thomasbrian/Google Drive/Thomas/MyWebsites/BES-Cx-Plus/Meteor/bescxplus/css/tooltip.css",
+		"/Users/thomasbrian/Google Drive/Thomas/MyWebsites/BES-Cx-Plus/Meteor/bescxplus/css/wizard.css",
+		"/Users/thomasbrian/Google Drive/Thomas/MyWebsites/BES-Cx-Plus/Meteor/bescxplus/css/system-message.css",
+		"/Users/thomasbrian/Google Drive/Thomas/MyWebsites/BES-Cx-Plus/Meteor/bescxplus/css/style_text.css",
+		"/Users/thomasbrian/Google Drive/Thomas/MyWebsites/BES-Cx-Plus/Meteor/bescxplus/css/statics.css",
+		"/Users/thomasbrian/Google Drive/Thomas/MyWebsites/BES-Cx-Plus/Meteor/bescxplus/css/handheld.css",
+		"/Users/thomasbrian/Google Drive/Thomas/MyWebsites/BES-Cx-Plus/Meteor/bescxplus/css/forms.css",
+		"/Users/thomasbrian/Google Drive/Thomas/MyWebsites/BES-Cx-Plus/Meteor/bescxplus/css/forms-btn.css",
+		"/Users/thomasbrian/Google Drive/Thomas/MyWebsites/BES-Cx-Plus/Meteor/bescxplus/css/modalwindow.css",
+		"/Users/thomasbrian/Google Drive/Thomas/MyWebsites/BES-Cx-Plus/Meteor/bescxplus/css/forms-btn-input.css",
+		"/Users/thomasbrian/Google Drive/Thomas/MyWebsites/BES-Cx-Plus/Meteor/bescxplus/css/datatables.css",
+		"/Users/thomasbrian/Google Drive/Thomas/MyWebsites/BES-Cx-Plus/Meteor/bescxplus/sftp-config.json",
+		"/Users/thomasbrian/Google Drive/Thomas/MyWebsites/BES-Cx-Plus/Meteor/bescxplus/js/costum.js",
+		"/Users/thomasbrian/Google Drive/Thomas/MyWebsites/BES-Cx-Plus/Meteor/bescxplus/css/fullcalendar.css",
+		"/Users/thomasbrian/Google Drive/Thomas/MyWebsites/BES-Cx-Plus/Meteor/bescxplus/.meteor/local/build/app.html",
+		"/Users/thomasbrian/Google Drive/Thomas/MyWebsites/leaderboard/leaderboard.html",
+		"/Users/thomasbrian/Google Drive/Thomas/MyWebsites/leaderboard/leaderboard.js",
+		"/Users/thomasbrian/Google Drive/Thomas/MyWebsites/products/products.html",
+		"/Users/thomasbrian/Google Drive/Thomas/MyWebsites/meteorTest/meteorTest.html",
+		"/Users/thomasbrian/Google Drive/Thomas/MyWebsites/meteorTest/meteorTest.css",
+		"/Users/thomasbrian/Google Drive/Thomas/MyWebsites/meteorTest/meteorTest.js",
+		"/Users/thomasbrian/Google Drive/Thomas/MyProjects/Psychrometrics Deluxe Ipad/src/objects/PsychPoint.as"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"lumberjack",
+			"script",
+			"beard",
+			"\\",
+			"/",
+			"comment",
+			"=",
+			"{",
+			"objects",
+			"@beard",
+			"declerations",
+			"learn",
+			"menu",
+			"text",
+			"label",
+			"lable",
+			"-",
+			"700",
+			"enterprise",
+			"url",
+			"hover",
+			"z-",
+			"z",
+			"text",
+			"z-",
+			"z",
+			"repeat",
+			"500px",
+			"-222",
+			"test",
+			"alert",
+			"searchProjects",
+			"searchProjectsInput",
+			"searchProjects",
+			"search",
+			"submit",
+			"searchProjects",
+			"searchEquipment",
+			"searchProjects",
+			"search",
+			"input",
+			"searchProjects",
+			"search",
+			"box search",
+			"alert",
+			"we",
+			"searchprojects",
+			"form",
+			"action",
+			"projectSearch",
+			"her",
+			"Equipment",
+			"projectStats",
+			"\"user\"",
+			"insert",
+			"Session.set",
+			"projectid",
+			"project equipment",
+			"total",
+			"once this project",
+			"equipmentName",
+			"selectedEquipmentName",
+			"projectEquipment",
+			"deleteEquipment",
+			"equipmentName",
+			"eqipmentName",
+			"delete",
+			"      \n",
+			"New Equipment",
+			".deleteProject",
+			"delete",
+			"newEquipmentWindow",
+			"tagPrefixInput",
+			"insert",
+			"loginError",
+			"addEquipment",
+			"generalEquipmentTypes",
+			"newEquipmentDiscipline",
+			"#equipmentSpecificDropdown",
+			"equipmentGeneralDropdown",
+			"equipmentSpecificDropdown",
+			"newEquipmentDiscipline",
+			"newEquipmentDiscipline\nnewEquipmentDiscipline\nnewEquipmentDiscipline\nnewEquipmentDiscipline",
+			"newEquipmentDiscipline",
+			"equipmentGeneralDropdown",
+			"newEquipmentDiscipline",
+			"specificequipmenttypes",
+			"specificEquipmentTypes",
+			"menu",
+			"select",
+			"generalEquipmentTypes",
+			"      ",
+			"GeneralEquipmentTypes",
+			"generalEquipmentTypes",
+			"GeneralEquipmentTypes",
+			"generalEquipmentTypes",
+			"newEquipmentDiscipline",
+			".set",
+			"newEquipmentDiscipline",
+			"openNewEquipmentWindow",
+			"general",
+			"addNewSingleEquipment",
+			"New Equipment",
+			"generateEquipmentList",
+			"testEquipmentList",
+			"testList",
+			"generateEquipmentList",
+			"load",
+			"loadEquipmentListTemplate",
+			"loadequipmentlist",
+			"debugg",
+			"loadEquipmentListTemplate",
+			"Post Completion",
+			"Construction",
+			"Submittal",
+			"Design",
+			"Pre-Design",
+			"tab",
+			"createNewEquipmentButton",
+			"projectID",
+			"dicipline",
+			"projectObjectID",
+			"currprojectid",
+			"console",
+			"\"current",
+			"\"currProjectName\"",
+			"\"projectName\"",
+			"\"user\""
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"*",
+			"currProjectName",
+			"double"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Compiler/sawmill.coffee",
+					"settings":
+					{
+						"buffer_size": 808,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								317,
+								317
+							]
+						],
+						"settings":
+						{
+							"auto_name": "sawmill.coffee",
+							"incomplete_sync": null,
+							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Compiler/Sample Compilers/pizza.js",
+					"settings":
+					{
+						"buffer_size": 665,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"settings":
+					{
+						"buffer_size": 7985,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								141,
+								141
+							]
+						],
+						"settings":
+						{
+							"auto_name": "[",
+							"incomplete_sync": null,
+							"syntax": "Packages/XML/XML.tmLanguage",
+							"tab_size": 3,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 27.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 30.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.sftp":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"dir",
+				"directions.haml"
+			],
+			[
+				"abou",
+				"aboutUs.haml"
+			],
+			[
+				"inde",
+				"index.haml"
+			],
+			[
+				"ind",
+				"index.haml"
+			],
+			[
+				"about",
+				"aboutUs.haml"
+			],
+			[
+				"style",
+				"css/style.css"
+			],
+			[
+				"text",
+				"css/style_text.css"
+			],
+			[
+				"font",
+				"text/museosans-webfont.svg"
+			],
+			[
+				"tabs",
+				"css/tabs-toggle.css"
+			],
+			[
+				"bes",
+				"bescxplus.css"
+			],
+			[
+				"bescxplu",
+				"bescxplus.css"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/Users/thomasbrian/Google Drive/Thomas/MyWebsites/Cock of the Walk Enterprise/www.cockofthewalkenterprise.com.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 211.0,
+	"status_bar_visible": true
+}

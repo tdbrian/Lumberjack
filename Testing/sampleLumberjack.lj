@@ -1,52 +1,54 @@
 @beard myBoxes ../components/myBoxes
 
-/---- Test Comment
+# test line comment
 
-*html5:
+*html5
 {
 
-	*script: source = "test.lj"
-	*style: source = "styles.css"
+	*script coffee: "test: 12"
+	*style sass: " "
 
-	*script: coffee = "test = 12"
-
-	*style: sass = " "
-
-	*vbox: #my-v-box 
+	*vbox #my-v-box 
 		.test-style 
-		gap="22" 
-		top="15" width="32"
+		gap:"22" 
+		top:"15" width:"32"
 	{
-		*p: 
-			text = "hello"
-			width = "25"
-			height = "22" 
-			font-size = "1.2em"
+
+		### test line comment
 		
-		*h1: 
-			text = "hello world"
+		*p 
+			text: "hello"
+			width: "25"
+			height: "22" 
+			font-size: "1.2em" 
 
-		*box: 	
-			click = "tester"
+		*h1 
+			text: "hello world"
+
+		*box 	
+			click: "tester"
 			.help .we .are
+		{
+			*label text: "test labels"
+		}
 
-		*label: text = "#testVarA#"
+		### *label text: "#testVarA#"
 
-		*image:
-			source = "testImage.jpg" 
-			height = "234"
-			width = "88"
+		*image
+			source: "testImage.jpg" 
+			height: "234"
+			width: "88"
 	}
 
-	*myBoxes-myBoxes:
+	*myBoxes-myBoxes title: "test box"
 	{
 
 	}
 
-	*list: height = "100%" click = "testFunction"
+	*list height: "100%" click: "testFunction"
 	{	
-		*li:
-		*li:
+		*li
+		*li
 	}
 
 }
